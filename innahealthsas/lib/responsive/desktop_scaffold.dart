@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:innahealthsas/Utils/my_box.dart';
+import 'package:innahealthsas/Utils/my_other_box.dart';
+import 'package:innahealthsas/Utils/my_tile.dart';
 import 'package:innahealthsas/constants.dart';
-import 'package:innahealthsas/util/my_box.dart';
-import 'package:innahealthsas/util/my_other_box.dart';
-import 'package:innahealthsas/util/my_other_tile.dart';
-import 'package:innahealthsas/util/my_tile.dart';
 
 class DesktopScaffold extends StatefulWidget {
   const DesktopScaffold({Key? key}) : super(key: key);
