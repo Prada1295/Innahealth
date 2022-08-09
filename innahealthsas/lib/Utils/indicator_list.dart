@@ -1,4 +1,4 @@
-List<String> markone = [
+List<String> indicatorone = [
   'item1',
   'item2',
   'item3',
@@ -10,7 +10,7 @@ List<String> markone = [
   'item9',
 ];
 
-List<String> marktwo = [
+List<String> indicatortwo = [
   'item1',
   'item2',
   'item3',
@@ -22,7 +22,7 @@ List<String> marktwo = [
   'item9',
 ];
 
-List<String> markthree = [
+List<String> indicatorthree = [
   'item1',
   'item2',
   'item3',
@@ -34,7 +34,7 @@ List<String> markthree = [
   'item9',
 ];
 
-List<String> markfour = [
+List<String> indicatorfour = [
   'item1',
   'item2',
   'item3',
@@ -46,7 +46,7 @@ List<String> markfour = [
   'item9',
 ];
 
-List<String> markfive = [
+List<String> indicatorfive = [
   'item1',
   'item2',
   'item3',
@@ -58,7 +58,7 @@ List<String> markfive = [
   'item9',
 ];
 
-List<String> marksix = [
+List<String> indicatorsix = [
   'item1',
   'item2',
   'item3',
@@ -70,7 +70,7 @@ List<String> marksix = [
   'item9',
 ];
 
-List<String> markseven = [
+List<String> indicatorseven = [
   'item1',
   'item2',
   'item3',
@@ -82,7 +82,7 @@ List<String> markseven = [
   'item9',
 ];
 
-List<String> markeight = [
+List<String> indicatoreight = [
   'item1',
   'item2',
   'item3',

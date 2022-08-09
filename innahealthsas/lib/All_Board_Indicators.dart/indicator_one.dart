@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:innahealthsas/Utils/indicator_list.dart';
 import 'package:innahealthsas/widgets/category_widgets.dart';
 
-class MarkOneCategory extends StatelessWidget {
-  const MarkOneCategory({Key? key}) : super(key: key);
+class IndicatorOneCategory extends StatelessWidget {
+  const IndicatorOneCategory({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,13 +29,14 @@ class MarkOneCategory extends StatelessWidget {
                       mainAxisSpacing: 20,
                       crossAxisSpacing: 15,
                       crossAxisCount: 2,
-                      children: List.generate(markone.length, (index) {
+                      children: List.generate(indicatorone.length, (index) {
                         return SubcategoryModel(
                           mainCategoryName: 'indicator 1 info',
-                          subCategoryName: markone[index],
+                          subCategoryName: indicatorone[index],
+                          //CHANGE THE IMAGES PATH
                           assetName:
                               'images/indicator_one_images/cup$index.png',
-                          subCategoryLabel: markone[index],
+                          subCategoryLabel: indicatorone[index],
                         );
                       }),
                     ),

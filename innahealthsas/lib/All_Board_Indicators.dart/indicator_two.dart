@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:innahealthsas/Utils/indicator_list.dart';
 import 'package:innahealthsas/widgets/category_widgets.dart';
 
-class MarkTwoCategory extends StatelessWidget {
-  const MarkTwoCategory({Key? key}) : super(key: key);
+class IndicatorTwoCategory extends StatelessWidget {
+  const IndicatorTwoCategory({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,13 +29,13 @@ class MarkTwoCategory extends StatelessWidget {
                       mainAxisSpacing: 20,
                       crossAxisSpacing: 15,
                       crossAxisCount: 2,
-                      children: List.generate(marktwo.length, (index) {
+                      children: List.generate(indicatortwo.length, (index) {
                         return SubcategoryModel(
                           mainCategoryName: 'item 2',
-                          subCategoryName: markone[index],
+                          subCategoryName: indicatortwo[index],
                           assetName:
                               'images/indicator_one_images/cup$index.png',
-                          subCategoryLabel: marktwo[index],
+                          subCategoryLabel: indicatortwo[index],
                         );
                       }),
                     ),

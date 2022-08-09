@@ -1,37 +1,33 @@
-import 'package:innahealthsas/All_Board_Indicators.dart/indicator_eight.dart';
-import 'package:innahealthsas/All_Board_Indicators.dart/indicator_five.dart';
-import 'package:innahealthsas/All_Board_Indicators.dart/indicator_four.dart';
-import 'package:innahealthsas/All_Board_Indicators.dart/indicator_one.dart';
-import 'package:innahealthsas/All_Board_Indicators.dart/indicator_seven.dart';
-import 'package:innahealthsas/All_Board_Indicators.dart/indicator_six.dart';
-import 'package:innahealthsas/All_Board_Indicators.dart/indicator_three.dart';
-import 'package:innahealthsas/All_Board_Indicators.dart/indicator_two.dart';
-import 'package:innahealthsas/All_Home_Items/home_items.dart';
-import 'package:innahealthsas/Utils/fake_search.dart';
-import 'package:innahealthsas/Utils/my_box.dart';
-import 'package:innahealthsas/Utils/my_tile.dart';
-import 'package:innahealthsas/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:innahealthsas/Categories/indicator_eight_category.dart';
+import 'package:innahealthsas/Categories/indicator_five_category.dart';
+import 'package:innahealthsas/Categories/indicator_four_category.dart';
+import 'package:innahealthsas/Categories/indicator_one_category.dart';
+import 'package:innahealthsas/Categories/indicator_seven_category.dart';
+import 'package:innahealthsas/Categories/indicator_six_category.dart';
+import 'package:innahealthsas/Categories/indicator_three_category.dart';
+import 'package:innahealthsas/Categories/indicator_two_category.dart';
+import 'package:innahealthsas/widgets/fake_search.dart';
 
 List<ItemsData> items = [
-  ItemsData(label: 'indicator 1'.toUpperCase()),
-  ItemsData(label: 'indicator 2'.toUpperCase()),
-  ItemsData(label: 'indicator 3'.toUpperCase()),
-  ItemsData(label: 'indicator 4'.toUpperCase()),
-  ItemsData(label: 'indicator 5'.toUpperCase()),
-  ItemsData(label: 'indicator 6'.toUpperCase()),
-  ItemsData(label: 'indicator 7'.toUpperCase()),
-  ItemsData(label: 'indicator 8'.toUpperCase()),
+  ItemsData(label: 'mark 1'.toUpperCase()),
+  ItemsData(label: 'mark 2'.toUpperCase()),
+  ItemsData(label: 'mark 3'.toUpperCase()),
+  ItemsData(label: 'mark 4'.toUpperCase()),
+  ItemsData(label: 'mark 5'.toUpperCase()),
+  ItemsData(label: 'mark 6'.toUpperCase()),
+  ItemsData(label: 'mark 7'.toUpperCase()),
+  ItemsData(label: 'mark 8'.toUpperCase()),
 ];
 
-class MobileScaffold extends StatefulWidget {
-  const MobileScaffold({Key? key}) : super(key: key);
+class BaristaCategoryScreen extends StatefulWidget {
+  const BaristaCategoryScreen({Key? key}) : super(key: key);
 
   @override
-  State<MobileScaffold> createState() => _MobileScaffoldState();
+  State<BaristaCategoryScreen> createState() => _BaristaCategoryScreenState();
 }
 
-class _MobileScaffoldState extends State<MobileScaffold> {
+class _BaristaCategoryScreenState extends State<BaristaCategoryScreen> {
   final PageController _pageController = PageController();
 
   @override
@@ -65,8 +61,8 @@ class _MobileScaffoldState extends State<MobileScaffold> {
 
   Widget sideNavigator(Size size) {
     return SizedBox(
-        height: size.height * 0.90,
-        width: size.width * 0.25,
+        height: size.height * 0.8,
+        width: size.width * 0.2,
         child: ListView.builder(
             itemCount: items.length,
             itemBuilder: (context, index) {
@@ -91,8 +87,8 @@ class _MobileScaffoldState extends State<MobileScaffold> {
 
   Widget categoryView(Size size) {
     return Container(
-      height: size.height * 0.9,
-      width: size.width * 0.7,
+      height: size.height * 0.8,
+      width: size.width * 0.8,
       color: Colors.white,
       child: PageView(
           controller: _pageController,

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:innahealthsas/Utils/indicator_list.dart';
 import 'package:innahealthsas/widgets/category_widgets.dart';
 
-class IndicatorFourCategory extends StatelessWidget {
-  const IndicatorFourCategory({Key? key}) : super(key: key);
+class IndicatorSixCategory extends StatelessWidget {
+  const IndicatorSixCategory({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,28 +15,29 @@ class IndicatorFourCategory extends StatelessWidget {
             bottom: 0,
             left: 0,
             child: SizedBox(
-              height: MediaQuery.of(context).size.height * 0.9,
-              width: MediaQuery.of(context).size.width * 0.7,
+              height: MediaQuery.of(context).size.height * 0.8,
+              width: MediaQuery.of(context).size.width * 0.75,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const CategoryHeaderLabel(
-                    headerLabel: 'Indicator 4',
+                    headerLabel: 'mark 6',
                   ),
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.75,
+                    height: MediaQuery.of(context).size.height * 0.68,
                     child: GridView.count(
-                      mainAxisSpacing: 20,
+                      mainAxisSpacing: 40,
                       crossAxisSpacing: 15,
                       crossAxisCount: 2,
-                      children: List.generate(indicatorfour.length, (index) {
+                      children: List.generate(indicatorsix.length, (index) {
                         return SubcategoryModel(
-                          mainCategoryName: 'indicator 4',
-                          subCategoryName: indicatorfour[index],
+                          mainCategoryName: 'indicator 6',
+                          subCategoryName: indicatorsix[index],
+                          //remember to change images direction
+                          //CHANGEEEE IMAGES DIRECTION
                           assetName:
-                              //CHANGE THE IMAGES PATH
                               'images/indicator_one_images/cup$index.png',
-                          subCategoryLabel: indicatorfour[index],
+                          subCategoryLabel: indicatorsix[index],
                         );
                       }),
                     ),
@@ -45,6 +46,12 @@ class IndicatorFourCategory extends StatelessWidget {
               ),
             ),
           ),
+          const Positioned(
+              bottom: 0,
+              right: 0,
+              child: SliderBar(
+                maincategoryName: 'indicator 6',
+              ))
         ],
       ),
     );
