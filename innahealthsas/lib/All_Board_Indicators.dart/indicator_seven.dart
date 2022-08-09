@@ -15,18 +15,18 @@ class MarkSevenCategory extends StatelessWidget {
             bottom: 0,
             left: 0,
             child: SizedBox(
-              height: MediaQuery.of(context).size.height * 0.8,
-              width: MediaQuery.of(context).size.width * 0.75,
+              height: MediaQuery.of(context).size.height * 0.9,
+              width: MediaQuery.of(context).size.width * 0.7,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const CategoryHeaderLabel(
-                    headerLabel: 'mark 7',
+                    headerLabel: 'Indicator7',
                   ),
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.68,
+                    height: MediaQuery.of(context).size.height * 0.75,
                     child: GridView.count(
-                      mainAxisSpacing: 40,
+                      mainAxisSpacing: 20,
                       crossAxisSpacing: 15,
                       crossAxisCount: 2,
                       children: List.generate(markseven.length, (index) {

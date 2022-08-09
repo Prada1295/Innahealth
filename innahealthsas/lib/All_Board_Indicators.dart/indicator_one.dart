@@ -8,30 +8,30 @@ class MarkOneCategory extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(5.0),
+      padding: const EdgeInsets.all(0),
       child: Stack(
         children: [
           Positioned(
             bottom: 0,
             left: 0,
             child: SizedBox(
-              height: MediaQuery.of(context).size.height * 0.8,
-              width: MediaQuery.of(context).size.width * 0.75,
+              height: MediaQuery.of(context).size.height * 0.9,
+              width: MediaQuery.of(context).size.width * 0.7,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const CategoryHeaderLabel(
-                    headerLabel: 'mark 1',
+                    headerLabel: 'Indicator 1',
                   ),
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.68,
+                    height: MediaQuery.of(context).size.height * 0.75,
                     child: GridView.count(
-                      mainAxisSpacing: 40,
+                      mainAxisSpacing: 20,
                       crossAxisSpacing: 15,
                       crossAxisCount: 2,
                       children: List.generate(markone.length, (index) {
                         return SubcategoryModel(
-                          mainCategoryName: 'mark 1',
+                          mainCategoryName: 'indicator 1 info',
                           subCategoryName: markone[index],
                           assetName:
                               'images/indicator_one_images/cup$index.png',

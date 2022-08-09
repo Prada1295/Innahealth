@@ -14,14 +14,14 @@ import 'package:innahealthsas/constants.dart';
 import 'package:flutter/material.dart';
 
 List<ItemsData> items = [
-  ItemsData(label: 'mark 1'.toUpperCase()),
-  ItemsData(label: 'mark 2'.toUpperCase()),
-  ItemsData(label: 'mark 3'.toUpperCase()),
-  ItemsData(label: 'mark 4'.toUpperCase()),
-  ItemsData(label: 'mark 5'.toUpperCase()),
-  ItemsData(label: 'mark 6'.toUpperCase()),
-  ItemsData(label: 'mark 7'.toUpperCase()),
-  ItemsData(label: 'mark 8'.toUpperCase()),
+  ItemsData(label: 'indicator 1'.toUpperCase()),
+  ItemsData(label: 'indicator 2'.toUpperCase()),
+  ItemsData(label: 'indicator 3'.toUpperCase()),
+  ItemsData(label: 'indicator 4'.toUpperCase()),
+  ItemsData(label: 'indicator 5'.toUpperCase()),
+  ItemsData(label: 'indicator 6'.toUpperCase()),
+  ItemsData(label: 'indicator 7'.toUpperCase()),
+  ItemsData(label: 'indicator 8'.toUpperCase()),
 ];
 
 class MobileScaffold extends StatefulWidget {
@@ -65,8 +65,8 @@ class _MobileScaffoldState extends State<MobileScaffold> {
 
   Widget sideNavigator(Size size) {
     return SizedBox(
-        height: size.height * 0.8,
-        width: size.width * 0.2,
+        height: size.height * 0.90,
+        width: size.width * 0.25,
         child: ListView.builder(
             itemCount: items.length,
             itemBuilder: (context, index) {
@@ -91,8 +91,8 @@ class _MobileScaffoldState extends State<MobileScaffold> {
 
   Widget categoryView(Size size) {
     return Container(
-      height: size.height * 0.8,
-      width: size.width * 0.8,
+      height: size.height * 0.9,
+      width: size.width * 0.7,
       color: Colors.white,
       child: PageView(
           controller: _pageController,
