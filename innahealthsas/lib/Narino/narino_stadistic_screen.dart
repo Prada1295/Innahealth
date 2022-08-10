@@ -31,7 +31,8 @@ class _NarinoStadisticScreenState extends State<NarinoStadisticScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Text(
-            'Your Cart is Empty',
+            'En esta pantalla se agregara todo lo relacionado a gráficas, tablas, promedios, toda la info que podamos recolectar de la alcaldía desde los archivos que nos permitan acceder',
+            textAlign: TextAlign.center,
             style: TextStyle(fontSize: 30),
           ),
           const SizedBox(
@@ -49,7 +50,7 @@ class _NarinoStadisticScreenState extends State<NarinoStadisticScreen> {
                         builder: (context) => const NarinoNavigationBar()));
               },
               child: const Text(
-                'Continue Shopping',
+                'Escoger Estadistica',
                 style: TextStyle(fontSize: 18, color: Colors.white),
               ),
             ),
@@ -64,27 +65,27 @@ class _NarinoStadisticScreenState extends State<NarinoStadisticScreen> {
             Row(
               children: const [
                 Text(
-                  'Total: \$ ',
+                  'Rendimiento Indicadores: ',
                   style: TextStyle(fontSize: 18),
                 ),
                 Text(
-                  '00.00',
+                  'ALTO',
                   style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
-                      color: Colors.red),
+                      color: Colors.green),
                 ),
               ],
             ),
             Container(
               height: 35,
-              width: MediaQuery.of(context).size.width * 0.45,
+              width: MediaQuery.of(context).size.width * 0.25,
               decoration: BoxDecoration(
                   color: Colors.yellow,
                   borderRadius: BorderRadius.circular(25)),
               child: MaterialButton(
                 onPressed: () {},
-                child: const Text('CHECK OUT'),
+                child: const Text('CHECK'),
               ),
             )
           ],

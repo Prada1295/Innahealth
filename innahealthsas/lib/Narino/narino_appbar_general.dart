@@ -29,9 +29,9 @@ class _NarinoNavigationBarState extends State<NarinoNavigationBar> {
 
         type: BottomNavigationBarType.fixed,
         selectedLabelStyle: const TextStyle(fontWeight: FontWeight.w600),
-        selectedItemColor: Colors.green[800],
-        unselectedItemColor: Colors.brown[600],
-        backgroundColor: Colors.brown[100],
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.black54,
+        backgroundColor: Colors.grey[400],
         //backgroundColor: Colors.orange[50],
         currentIndex: _selectedIndex,
         items: const [

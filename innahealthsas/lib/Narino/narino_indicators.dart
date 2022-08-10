@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:innahealthsas/All_Board_Indicators.dart/indicator_nine.dart';
+import 'package:innahealthsas/All_Board_Indicators/indicator_nine.dart';
 import 'package:innahealthsas/Categories/indicator_eight_category.dart';
 import 'package:innahealthsas/Categories/indicator_five_category.dart';
 import 'package:innahealthsas/Categories/indicator_four_category.dart';

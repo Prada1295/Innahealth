@@ -14,7 +14,7 @@ class _NarinoLoginState extends State<NarinoLogin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.brown[400],
+      backgroundColor: Colors.grey[150],
       body: SafeArea(
         child: Center(
           child: Column(
@@ -23,7 +23,7 @@ class _NarinoLoginState extends State<NarinoLogin> {
             children: [
               const Image(
                 image: AssetImage('images/narino_appbar_images/coding.png'),
-                width: 180,
+                width: 140,
               ),
               const SizedBox(height: 50),
               Container(
@@ -36,31 +36,31 @@ class _NarinoLoginState extends State<NarinoLogin> {
                     // ignore: unnecessary_const
                     image: const AssetImage(
                         'images/narino_appbar_images/user.png')),
-                width: 75,
+                width: 60,
               ),
               const SizedBox(height: 15),
               const Text(
-                'As Barista',
-                style: TextStyle(fontSize: 15, color: Colors.white),
+                'como Perfil Autorizado',
+                style: TextStyle(fontSize: 15, color: Colors.black45),
               ),
 
               const SizedBox(height: 35),
               // Hello Again!!
               const Text(
-                'Hello Again!!',
+                'Bienvenido a CBApp!!',
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black45,
                   fontWeight: FontWeight.bold,
-                  fontSize: 36,
+                  fontSize: 30,
                 ),
               ),
 
               const SizedBox(height: 10),
 
               const Text(
-                'Welcome back, you\'ve been missed!!',
+                'Made in Medellín',
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black54,
                   fontSize: 20,
                 ),
               ),
@@ -122,16 +122,17 @@ class _NarinoLoginState extends State<NarinoLogin> {
                 // ignore: prefer_const_literals_to_create_immutables
                 children: [
                   const Text(
-                    'Not a member?',
+                    'No está registrado?',
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.black45,
                       fontWeight: FontWeight.bold,
+                      fontSize: 20,
                     ),
                   ),
                   const Text(
-                    '  Register Now',
+                    '  Hazlo Ahora',
                     style: TextStyle(
-                      color: Colors.black,
+                      color: Colors.black54,
                       fontWeight: FontWeight.bold,
                     ),
                   )
@@ -139,7 +140,7 @@ class _NarinoLoginState extends State<NarinoLogin> {
               ),
               const SizedBox(height: 15),
               Material(
-                color: Colors.white,
+                color: Colors.lightBlueAccent,
                 borderRadius: BorderRadius.circular(25),
                 child: MaterialButton(
                   minWidth: MediaQuery.of(context).size.width * 0.6,
@@ -151,7 +152,7 @@ class _NarinoLoginState extends State<NarinoLogin> {
                   },
                   child: const Text(
                     'Login',
-                    style: TextStyle(fontSize: 18, color: Colors.black),
+                    style: TextStyle(fontSize: 18, color: Colors.white),
                   ),
                 ),
               )
