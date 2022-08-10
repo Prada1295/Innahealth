@@ -61,6 +61,7 @@ flutter:
   assets:
     - images/
     - images/indicator_one_images/
+    - images/narino_appbar_images/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

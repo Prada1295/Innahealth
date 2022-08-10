@@ -49,13 +49,13 @@ class _NarinoProfileScreenState extends State<NarinoProfileScreen> {
                           child: Row(children: [
                             const CircleAvatar(
                               radius: 50,
-                              backgroundImage:
-                                  AssetImage('images/profile_images/guest.jpg'),
+                              backgroundImage: AssetImage(
+                                  'images/narino_appbar_images/guest.jpg'),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(left: 25),
                               child: Text(
-                                'guest'.toUpperCase(),
+                                'Alcaldía de Nariño'.toUpperCase(),
                                 style: const TextStyle(
                                     fontSize: 24, fontWeight: FontWeight.w600),
                               ),
@@ -91,9 +91,10 @@ class _NarinoProfileScreenState extends State<NarinoProfileScreen> {
                                 width: MediaQuery.of(context).size.width * 0.2,
                                 child: const Center(
                                   child: Text(
-                                    'Cart',
+                                    'Mapas Municipio',
                                     style: TextStyle(
-                                        color: Colors.white, fontSize: 20),
+                                        color: Colors.white, fontSize: 15),
+                                    textAlign: TextAlign.center,
                                   ),
                                 ),
                               ),
@@ -108,9 +109,10 @@ class _NarinoProfileScreenState extends State<NarinoProfileScreen> {
                                 width: MediaQuery.of(context).size.width * 0.2,
                                 child: const Center(
                                   child: Text(
-                                    'Orders',
+                                    'Graficos Municipio',
                                     style: TextStyle(
-                                        color: Colors.black54, fontSize: 20),
+                                        color: Colors.black54, fontSize: 15),
+                                    textAlign: TextAlign.center,
                                   ),
                                 ),
                               ),
@@ -129,9 +131,10 @@ class _NarinoProfileScreenState extends State<NarinoProfileScreen> {
                                 width: MediaQuery.of(context).size.width * 0.2,
                                 child: const Center(
                                   child: Text(
-                                    'WishList',
+                                    'Contactos Alcaldia',
                                     style: TextStyle(
-                                        color: Colors.white, fontSize: 20),
+                                        color: Colors.white, fontSize: 15),
+                                    textAlign: TextAlign.center,
                                   ),
                                 ),
                               ),
@@ -146,10 +149,10 @@ class _NarinoProfileScreenState extends State<NarinoProfileScreen> {
                       child: Column(
                         children: [
                           const SizedBox(
-                            height: 175,
+                            height: 200,
                             child: Image(
-                              image:
-                                  AssetImage('images/profile_images/img10.png'),
+                              image: AssetImage(
+                                  'images/narino_appbar_images/narino_escudo.png'),
                               width: 125,
                             ),
                           ),

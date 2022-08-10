@@ -10,9 +10,9 @@ import 'package:innahealthsas/Categories/indicator_two_category.dart';
 import 'package:innahealthsas/widgets/fake_search.dart';
 
 List<ItemsData> items = [
-  ItemsData(label: 'mark 1'.toUpperCase()),
-  ItemsData(label: 'mark 2'.toUpperCase()),
-  ItemsData(label: 'mark 3'.toUpperCase()),
+  ItemsData(label: 'Indicadores de Salud'),
+  ItemsData(label: 'Sistemas de Información (S.I)'),
+  ItemsData(label: 'Salud Mental'),
   ItemsData(label: 'mark 4'.toUpperCase()),
   ItemsData(label: 'mark 5'.toUpperCase()),
   ItemsData(label: 'mark 6'.toUpperCase()),
@@ -20,14 +20,14 @@ List<ItemsData> items = [
   ItemsData(label: 'mark 8'.toUpperCase()),
 ];
 
-class BaristaCategoryScreen extends StatefulWidget {
-  const BaristaCategoryScreen({Key? key}) : super(key: key);
+class NarinoIndicatorScreen extends StatefulWidget {
+  const NarinoIndicatorScreen({Key? key}) : super(key: key);
 
   @override
-  State<BaristaCategoryScreen> createState() => _BaristaCategoryScreenState();
+  State<NarinoIndicatorScreen> createState() => _NarinoIndicatorScreenState();
 }
 
-class _BaristaCategoryScreenState extends State<BaristaCategoryScreen> {
+class _NarinoIndicatorScreenState extends State<NarinoIndicatorScreen> {
   final PageController _pageController = PageController();
 
   @override

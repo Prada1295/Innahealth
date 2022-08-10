@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:innahealthsas/Narino/narino_homebar.dart';
+import 'package:innahealthsas/Narino/narino_indicators.dart';
 import 'package:innahealthsas/Narino/narino_profile_screen.dart';
 import 'package:innahealthsas/Narino/narino_stadistic_screen.dart';
 
@@ -16,6 +17,7 @@ class _BaristaNavigationBarState extends State<BaristaNavigationBar> {
     //ALL THE CATEGORIES FOR EACH USER
     NarinoHomeBar(),
     NarinoStadisticScreen(),
+    NarinoIndicatorScreen(),
     NarinoProfileScreen(),
   ];
   @override
@@ -38,12 +40,12 @@ class _BaristaNavigationBarState extends State<BaristaNavigationBar> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: 'Category',
+            icon: Icon(Icons.trending_up),
+            label: 'Stadistics',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_cart),
-            label: 'Cart',
+            icon: Icon(Icons.lightbulb_circle_sharp),
+            label: 'Indicators',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
