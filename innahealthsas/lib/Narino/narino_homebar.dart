@@ -25,10 +25,10 @@ class _NarinoHomeBarState extends State<NarinoHomeBar> {
               indicatorWeight: 8,
               tabs: [
                 RepeatedTab(
-                  label: 'MARK 1',
+                  label: '¿Quienes Somos?',
                 ),
                 RepeatedTab(
-                  label: 'MARK 2',
+                  label: 'Nuestros Indicadores',
                 ),
                 RepeatedTab(
                   label: 'MARK 3',
@@ -52,8 +52,16 @@ class _NarinoHomeBarState extends State<NarinoHomeBar> {
             ),
           ),
           body: const TabBarView(children: [
-            Center(child: Text('MARK 1 screen')),
-            Center(child: Text('MARK 2 screen')),
+            Center(
+                child: Text(
+              'Pantalla de Presentacion de "¿Quienes Somos?", para añadir cualquier tipo de informacion relevante, imagenes, videos, links, etc',
+              textAlign: TextAlign.center,
+            )),
+            Center(
+                child: Text(
+              'Pantalla de Presentacion de "Nuestros Indicadores", para dar una vista general de los aspecrtos positivos y negativos en relacion a los idnicadores',
+              textAlign: TextAlign.center,
+            )),
             Center(child: Text('MARK 3 screen')),
             Center(child: Text('MARK 4 screen')),
             Center(child: Text('MARK 5 screen')),

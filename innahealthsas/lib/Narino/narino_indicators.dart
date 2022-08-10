@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:innahealthsas/All_Board_Indicators.dart/indicator_nine.dart';
 import 'package:innahealthsas/Categories/indicator_eight_category.dart';
 import 'package:innahealthsas/Categories/indicator_five_category.dart';
 import 'package:innahealthsas/Categories/indicator_four_category.dart';
@@ -13,11 +14,12 @@ List<ItemsData> items = [
   ItemsData(label: 'Indicadores de Salud'),
   ItemsData(label: 'Sistemas de Información (S.I)'),
   ItemsData(label: 'Salud Mental'),
-  ItemsData(label: 'mark 4'.toUpperCase()),
-  ItemsData(label: 'mark 5'.toUpperCase()),
-  ItemsData(label: 'mark 6'.toUpperCase()),
-  ItemsData(label: 'mark 7'.toUpperCase()),
-  ItemsData(label: 'mark 8'.toUpperCase()),
+  ItemsData(label: 'Comunicación/Educación en Salud'),
+  ItemsData(label: 'Vigilancia Epidemiológica'),
+  ItemsData(label: 'Gestantes'),
+  ItemsData(label: 'Adulto Mayor'),
+  ItemsData(label: 'Serivicio de Salud/Talento Humano'),
+  ItemsData(label: 'Articulación de Actores'),
 ];
 
 class NarinoIndicatorScreen extends StatefulWidget {
@@ -78,7 +80,10 @@ class _NarinoIndicatorScreenState extends State<NarinoIndicatorScreen> {
                       : Colors.brown.shade300,
                   height: 100,
                   child: Center(
-                    child: Text(items[index].label),
+                    child: Text(
+                      items[index].label,
+                      textAlign: TextAlign.center,
+                    ),
                   ),
                 ),
               );
@@ -110,6 +115,7 @@ class _NarinoIndicatorScreenState extends State<NarinoIndicatorScreen> {
             IndicatorSixCategory(),
             IndicatorSevenCategory(),
             IndicatorEightCategory(),
+            IndicatorNineCategory(),
           ]),
     );
   }

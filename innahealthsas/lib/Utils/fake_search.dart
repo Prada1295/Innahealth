@@ -31,7 +31,7 @@ class FakeSearch extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'What are you looking for?',
+                  'Busca Sobre Nariño, Antioquia',
                   style: TextStyle(fontSize: 18, color: Colors.grey),
                 ),
               ],

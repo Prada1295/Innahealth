@@ -4,14 +4,14 @@ import 'package:innahealthsas/Narino/narino_indicators.dart';
 import 'package:innahealthsas/Narino/narino_profile_screen.dart';
 import 'package:innahealthsas/Narino/narino_stadistic_screen.dart';
 
-class BaristaNavigationBar extends StatefulWidget {
-  const BaristaNavigationBar({Key? key}) : super(key: key);
+class NarinoNavigationBar extends StatefulWidget {
+  const NarinoNavigationBar({Key? key}) : super(key: key);
 
   @override
-  State<BaristaNavigationBar> createState() => _BaristaNavigationBarState();
+  State<NarinoNavigationBar> createState() => _NarinoNavigationBarState();
 }
 
-class _BaristaNavigationBarState extends State<BaristaNavigationBar> {
+class _NarinoNavigationBarState extends State<NarinoNavigationBar> {
   int _selectedIndex = 0;
   final List<Widget> _tabs = const [
     //ALL THE CATEGORIES FOR EACH USER
@@ -37,19 +37,19 @@ class _BaristaNavigationBarState extends State<BaristaNavigationBar> {
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Home',
+            label: 'General',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.trending_up),
-            label: 'Stadistics',
+            label: 'Estadisticas',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.lightbulb_circle_sharp),
-            label: 'Indicators',
+            label: 'Indicadores',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
-            label: 'Profile',
+            label: 'Perfil',
           ),
         ],
         onTap: (index) {

@@ -46,7 +46,7 @@ class _NarinoStadisticScreenState extends State<NarinoStadisticScreen> {
                 Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const BaristaNavigationBar()));
+                        builder: (context) => const NarinoNavigationBar()));
               },
               child: const Text(
                 'Continue Shopping',
