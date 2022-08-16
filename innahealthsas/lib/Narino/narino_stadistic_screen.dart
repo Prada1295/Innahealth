@@ -16,15 +16,7 @@ class _NarinoStadisticScreenState extends State<NarinoStadisticScreen> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.white,
-        title: const AppBarTitle(title: 'Cart'),
-        actions: [
-          IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.delete_forever,
-                color: Colors.black,
-              ))
-        ],
+        title: const AppBarTitle(title: 'Tablero De Control en Salud'),
       ),
       body: Center(
           child: Column(

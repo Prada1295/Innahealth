@@ -14,7 +14,7 @@ class _NarinoLoginState extends State<NarinoLogin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[150],
+      backgroundColor: Colors.grey[100],
       body: SafeArea(
         child: Center(
           child: Column(
@@ -22,23 +22,18 @@ class _NarinoLoginState extends State<NarinoLogin> {
             // ignore: prefer_const_literals_to_create_immutables
             children: [
               const Image(
-                image: AssetImage('images/narino_appbar_images/coding.png'),
-                width: 140,
+                image:
+                    AssetImage('images/narino_appbar_images/narino_escudo.png'),
+                width: 150,
               ),
-              const SizedBox(height: 50),
+              const SizedBox(height: 10),
               Container(
-                padding: const EdgeInsets.all(12),
-                decoration: BoxDecoration(
-                  color: Colors.brown[300],
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: const Image(
-                    // ignore: unnecessary_const
-                    image: const AssetImage(
-                        'images/narino_appbar_images/user.png')),
-                width: 60,
-              ),
-              const SizedBox(height: 15),
+                  padding: const EdgeInsets.all(5),
+                  child: const Icon(
+                    Icons.local_hospital_outlined,
+                    size: 100,
+                  )),
+              const SizedBox(height: 10),
               const Text(
                 'como Perfil Autorizado',
                 style: TextStyle(fontSize: 15, color: Colors.black45),
@@ -47,7 +42,7 @@ class _NarinoLoginState extends State<NarinoLogin> {
               const SizedBox(height: 35),
               // Hello Again!!
               const Text(
-                'Bienvenido a CBApp!!',
+                'CBApp',
                 style: TextStyle(
                   color: Colors.black45,
                   fontWeight: FontWeight.bold,
@@ -58,7 +53,7 @@ class _NarinoLoginState extends State<NarinoLogin> {
               const SizedBox(height: 10),
 
               const Text(
-                'Made in Medellín',
+                'Tablero de Control en Salud',
                 style: TextStyle(
                   color: Colors.black54,
                   fontSize: 20,

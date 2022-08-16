@@ -26,7 +26,6 @@ class _NarinoNavigationBarState extends State<NarinoNavigationBar> {
       body: _tabs[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         elevation: 0,
-
         type: BottomNavigationBarType.fixed,
         selectedLabelStyle: const TextStyle(fontWeight: FontWeight.w600),
         selectedItemColor: Colors.white,

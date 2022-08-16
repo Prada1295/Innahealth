@@ -9,7 +9,7 @@ class IndicatorOneCategory extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(5.0),
+      padding: const EdgeInsets.symmetric(),
       child: Stack(
         children: [
           Positioned(
@@ -22,13 +22,13 @@ class IndicatorOneCategory extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const CategoryHeaderLabel(
-                    headerLabel: 'mark 8',
+                    headerLabel: 'Indicadores de Salud',
                   ),
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.68,
+                    height: MediaQuery.of(context).size.height * 0.67,
                     child: GridView.count(
-                      mainAxisSpacing: 40,
-                      crossAxisSpacing: 15,
+                      mainAxisSpacing: 2,
+                      crossAxisSpacing: 10,
                       crossAxisCount: 2,
                       children: List.generate(indicatorone.length, (index) {
                         return SubcategoryModel(
