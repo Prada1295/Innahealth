@@ -34,7 +34,7 @@ class IndicatorSevenCategory extends StatelessWidget {
                           mainCategoryName: 'indicator 7',
                           subCategoryName: indicatorseven[index],
                           assetName:
-                              'images/indicator_one_images/cup$index.png',
+                              'images/indicator_one_images/indicador$index.png',
                           subCategoryLabel: indicatorseven[index],
                         );
                       }),

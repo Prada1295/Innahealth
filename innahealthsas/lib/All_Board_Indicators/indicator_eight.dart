@@ -34,7 +34,7 @@ class IndicatorEightCategory extends StatelessWidget {
                           mainCategoryName: 'mark 8',
                           subCategoryName: indicatoreight[index],
                           assetName:
-                              'images/indicator_one_images/cup$index.png',
+                              'images/indicator_one_images/indicador$index.png',
                           subCategoryLabel: indicatoreight[index],
                         );
                       }),

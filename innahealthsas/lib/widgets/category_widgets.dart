@@ -21,11 +21,11 @@ class SliderBar extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                maincategoryName == 'mark 9'
+                maincategoryName == 'Articulación de Actores'
                     ? const Text('')
                     : const Text(' << ', style: style),
                 Text(maincategoryName.toUpperCase(), style: style),
-                maincategoryName == 'mark 1'
+                maincategoryName == 'Indicadores de Salud'
                     ? const Text('')
                     : const Text(' >> ', style: style),
               ],
@@ -61,12 +61,13 @@ class SubcategoryModel extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => SubCategProducts(
-                      maincategName: mainCategoryName,
-                      subcategName: subCategoryName,
-                    )));
+          context,
+          MaterialPageRoute(
+              builder: (context) => SubCategProducts(
+                    maincategName: mainCategoryName,
+                    subcategName: subCategoryName,
+                  )),
+        );
       },
       child: Column(
         children: [
@@ -75,7 +76,10 @@ class SubcategoryModel extends StatelessWidget {
             width: 70,
             child: Image(image: AssetImage(assetName)),
           ),
-          Text(subCategoryLabel)
+          Text(
+            subCategoryLabel,
+            textAlign: TextAlign.center,
+          )
         ],
       ),
     );
@@ -94,7 +98,8 @@ class CategoryHeaderLabel extends StatelessWidget {
       child: Text(
         headerLabel,
         style: const TextStyle(
-            fontSize: 24, fontWeight: FontWeight.bold, letterSpacing: 1.5),
+            fontSize: 22, fontWeight: FontWeight.bold, letterSpacing: 1.5),
+        textAlign: TextAlign.center,
       ),
     );
   }

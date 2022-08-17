@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:innahealthsas/widgets/category_widgets.dart';
-
 import '../Utils/indicator_list.dart';
 
 class IndicatorOneCategory extends StatelessWidget {
@@ -36,7 +35,7 @@ class IndicatorOneCategory extends StatelessWidget {
                           subCategoryName: indicatorone[index],
                           //remember to change images direction
                           assetName:
-                              'images/indicator_one_images/cup$index.png',
+                              'images/indicator_one_images/indicador$index.png',
                           subCategoryLabel: indicatorone[index],
                         );
                       }),
@@ -50,7 +49,7 @@ class IndicatorOneCategory extends StatelessWidget {
               bottom: 0,
               right: 0,
               child: SliderBar(
-                maincategoryName: 'indicator 8',
+                maincategoryName: 'Indicadores de Salud',
               ))
         ],
       ),

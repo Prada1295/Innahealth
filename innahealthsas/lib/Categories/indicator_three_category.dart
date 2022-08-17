@@ -21,10 +21,10 @@ class IndicatorThreeCategory extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const CategoryHeaderLabel(
-                    headerLabel: 'mark 3',
+                    headerLabel: 'Indicadores de Salud Mental',
                   ),
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.68,
+                    height: MediaQuery.of(context).size.height * 0.67,
                     child: GridView.count(
                       mainAxisSpacing: 40,
                       crossAxisSpacing: 15,
@@ -35,7 +35,7 @@ class IndicatorThreeCategory extends StatelessWidget {
                           subCategoryName: indicatorthree[index],
                           //remember to change images direction
                           assetName:
-                              'images/indicator_one_images/cup$index.png',
+                              'images/indicator_three_images/indicador$index.png',
                           subCategoryLabel: indicatorthree[index],
                         );
                       }),
@@ -49,7 +49,7 @@ class IndicatorThreeCategory extends StatelessWidget {
               bottom: 0,
               right: 0,
               child: SliderBar(
-                maincategoryName: 'indicator 3',
+                maincategoryName: 'salud mental',
               ))
         ],
       ),

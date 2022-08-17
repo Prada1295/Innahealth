@@ -21,10 +21,10 @@ class IndicatorFourCategory extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const CategoryHeaderLabel(
-                    headerLabel: 'mark 4',
+                    headerLabel: 'Comunicaión/Educación en Salud',
                   ),
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.68,
+                    height: MediaQuery.of(context).size.height * 0.67,
                     child: GridView.count(
                       mainAxisSpacing: 40,
                       crossAxisSpacing: 15,
@@ -35,7 +35,7 @@ class IndicatorFourCategory extends StatelessWidget {
                           subCategoryName: indicatorfour[index],
                           //remember to change images direction
                           assetName:
-                              'images/indicator_one_images/cup$index.png',
+                              'images/indicator_four_images/indicador$index.png',
                           subCategoryLabel: indicatorfour[index],
                         );
                       }),
@@ -49,7 +49,7 @@ class IndicatorFourCategory extends StatelessWidget {
               bottom: 0,
               right: 0,
               child: SliderBar(
-                maincategoryName: 'indicator 4',
+                maincategoryName: 'com.../educación en salud',
               ))
         ],
       ),

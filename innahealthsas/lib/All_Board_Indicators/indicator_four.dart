@@ -35,7 +35,7 @@ class IndicatorFourCategory extends StatelessWidget {
                           subCategoryName: indicatorfour[index],
                           assetName:
                               //CHANGE THE IMAGES PATH
-                              'images/indicator_one_images/cup$index.png',
+                              'images/indicator_one_images/indicador$index.png',
                           subCategoryLabel: indicatorfour[index],
                         );
                       }),

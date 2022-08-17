@@ -21,10 +21,10 @@ class IndicatorFiveCategory extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const CategoryHeaderLabel(
-                    headerLabel: 'mark 5',
+                    headerLabel: 'Vigilancia Epidemiológica',
                   ),
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.68,
+                    height: MediaQuery.of(context).size.height * 0.67,
                     child: GridView.count(
                       mainAxisSpacing: 40,
                       crossAxisSpacing: 15,
@@ -35,7 +35,7 @@ class IndicatorFiveCategory extends StatelessWidget {
                           subCategoryName: indicatorfive[index],
                           //remember to change images direction
                           assetName:
-                              'images/indicator_one_images/cup$index.png',
+                              'images/indicator_five_images/indicador$index.png',
                           subCategoryLabel: indicatorfive[index],
                         );
                       }),
@@ -49,7 +49,7 @@ class IndicatorFiveCategory extends StatelessWidget {
               bottom: 0,
               right: 0,
               child: SliderBar(
-                maincategoryName: 'indicator 5',
+                maincategoryName: 'vigilancia epidemiológica',
               ))
         ],
       ),

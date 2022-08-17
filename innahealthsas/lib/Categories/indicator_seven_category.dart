@@ -21,7 +21,7 @@ class IndicatorSevenCategory extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const CategoryHeaderLabel(
-                    headerLabel: 'mark 7',
+                    headerLabel: 'Adulto Mayor',
                   ),
                   SizedBox(
                     height: MediaQuery.of(context).size.height * 0.68,
@@ -36,7 +36,7 @@ class IndicatorSevenCategory extends StatelessWidget {
                           //remember to change images direction
                           //CHANGEEEE IMAGES DIRECTION
                           assetName:
-                              'images/indicator_one_images/cup$index.png',
+                              'images/indicator_seven_images/indicador$index.png',
                           subCategoryLabel: indicatorseven[index],
                         );
                       }),
@@ -50,7 +50,7 @@ class IndicatorSevenCategory extends StatelessWidget {
               bottom: 0,
               right: 0,
               child: SliderBar(
-                maincategoryName: 'indicator 7',
+                maincategoryName: 'adulto mayor',
               ))
         ],
       ),

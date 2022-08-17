@@ -34,7 +34,7 @@ class IndicatorThreeCategory extends StatelessWidget {
                           mainCategoryName: 'mark 3',
                           subCategoryName: indicatorthree[index],
                           assetName:
-                              'images/indicator_one_images/cup$index.png',
+                              'images/indicator_one_images/indicador$index.png',
                           subCategoryLabel: indicatorthree[index],
                         );
                       }),

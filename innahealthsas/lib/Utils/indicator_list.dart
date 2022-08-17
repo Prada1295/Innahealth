@@ -1,107 +1,92 @@
+// ignore_for_file: unused_import
+
+import 'package:flutter/material.dart';
+
 List<String> indicatorone = [
-  'item1',
-  'item2',
-  'item3',
-  'item4',
-  'item5',
-  'item6',
-  'item7',
-  'item8',
-  'item9',
+  'I.R.A',
+  'TUBERCULOSIS',
+  'HIPERTENSIÓN ARTERIAL',
+  'DIABETES MELLITUS',
+  'EPOC',
+  'CÁNCER',
+  'VACUNACIÓN',
+  'MUERTE PERINATAL',
+  'VIVIENDA DIGNA',
+  'AGUA POTABLE',
+  'ALCANTARILLADO',
+  'EDUCACIÓN',
+  'REDES ELÉCTRICAS',
 ];
 
 List<String> indicatortwo = [
-  'item1',
-  'item2',
-  'item3',
-  'item4',
-  'item5',
-  'item6',
-  'item7',
-  'item8',
-  'item9',
+  'MAPAS',
+  'TALENTO HUMANO',
+  'COMPUTADOR',
+  'SOFTWARE',
+  'INTERNET',
+  'BASES DE DATOS',
 ];
 
 List<String> indicatorthree = [
-  'item1',
-  'item2',
-  'item3',
-  'item4',
-  'item5',
-  'item6',
-  'item7',
-  'item8',
-  'item9',
+  'ALCOHOLISMO',
+  'TALENTO HUMANO PARA INTERVENCIÓN',
+  'CONSUMO SUSTANCIAS PSICOACTIVAS',
+  'MAPA DE INDICADORES',
+  'SUICIDIO',
 ];
 
 List<String> indicatorfour = [
-  'item1',
-  'item2',
-  'item3',
-  'item4',
-  'item5',
-  'item6',
-  'item7',
-  'item8',
-  'item9',
+  'VOLANTES+WEB',
+  'PERIFONEO/REDES',
+  'CAMPAÑA DE AUTOCUIDADO',
+  'EMISORA',
+  'ART. SEC. EDUCACIÓN',
+  'ART. SEC. CULTURA',
 ];
 
 List<String> indicatorfive = [
-  'item1',
-  'item2',
-  'item3',
-  'item4',
-  'item5',
-  'item6',
-  'item7',
-  'item8',
-  'item9',
+  'CERCO EPIDEMIOLÓGICO',
+  'IEC',
+  'MAPA DE CASOS',
+  'SEG. CLINICO-PACIENTES',
+  'REPORTE CASOS A SECCIONAL',
+  'BOLETÍN SEMANAL A COMUNIDAD',
 ];
 
 List<String> indicatorsix = [
-  'item1',
-  'item2',
-  'item3',
-  'item4',
-  'item5',
-  'item6',
-  'item7',
-  'item8',
-  'item9',
+  'ATENCIÓN DE CONTROL PERINATAL',
+  'MAPA',
+  'SEGUIMIENTO ALTO RIESGO OBSTÉTRICO',
+  'PARTO HUMANIZADO',
 ];
 
 List<String> indicatorseven = [
-  'item1',
-  'item2',
-  'item3',
-  'item4',
-  'item5',
-  'item6',
-  'item7',
-  'item8',
-  'item9',
+  'SEGURIDAD ALIMENTARIA',
+  'ADULTOS CON SUBSIDIO',
+  'SALUD MENTAL DEL ADULTO MAYOR',
+  'CENSO ADULTO MAYOR',
 ];
 
 List<String> indicatoreight = [
-  'item1',
-  'item2',
-  'item3',
-  'item4',
-  'item5',
-  'item6',
-  'item7',
-  'item8',
-  'item9',
+  'INF. ARTICULACIÓN CON DLS',
+  'DOTACIÓN DE E.P.P.',
+  'PROTOCOLO ACTUALIZADO EN LA ESE',
+  'SEGUIMIENTO A CASOS POSITIVOS',
+  'FORTALECIMIENTO ATENCIÓN PRIMARIA',
 ];
 
 List<String> indicatornine = [
-  'item1',
-  'item2',
-  'item3',
-  'item4',
-  'item5',
-  'item6',
-  'item7',
-  'item8',
-  'item9',
+  'B.D COMERCIANTES/TRANSPORTADORES',
+  'REUNIÓN SEMANAL CON ALCALDE',
+  'EQUIPO DE RESPUESTA COVID',
+  'INFORME MENSUAL A LA DLS',
+  'PROTOCOLOS DE BIOSEGURIDAD',
+];
+
+List<String> indicatorten = [
+  'B.D COMERCIANTES/TRANSPORTADORES',
+  'REUNIÓN SEMANAL CON ALCALDE',
+  'EQUIPO DE RESPUESTA COVID',
+  'INFORME MENSUAL A LA DLS',
+  'PROTOCOLOS DE BIOSEGURIDAD',
 ];

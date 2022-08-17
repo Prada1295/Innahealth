@@ -21,10 +21,10 @@ class IndicatorTwoCategory extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const CategoryHeaderLabel(
-                    headerLabel: 'mark 2',
+                    headerLabel: 'Sistemas de Información de Salud',
                   ),
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.68,
+                    height: MediaQuery.of(context).size.height * 0.64,
                     child: GridView.count(
                       mainAxisSpacing: 40,
                       crossAxisSpacing: 15,
@@ -36,7 +36,7 @@ class IndicatorTwoCategory extends StatelessWidget {
                           //remember to change images direction
                           //CHANGEEE FAST
                           assetName:
-                              'images/indicator_one_images/cup$index.png',
+                              'images/indicator_two_images/img$index.png',
                           subCategoryLabel: indicatortwo[index],
                         );
                       }),
@@ -50,7 +50,7 @@ class IndicatorTwoCategory extends StatelessWidget {
               bottom: 0,
               right: 0,
               child: SliderBar(
-                maincategoryName: 'indicator 2',
+                maincategoryName: 'Sis. Información de Salud',
               ))
         ],
       ),
