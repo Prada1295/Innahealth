@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:innahealthsas/Narino/narino_appbar_general.dart';
+import 'package:innahealthsas/widgets/signup_widgetsa.dart';
 
 class NarinoLogin extends StatefulWidget {
   const NarinoLogin({Key? key}) : super(key: key);
@@ -112,26 +113,10 @@ class _NarinoLoginState extends State<NarinoLogin> {
               const SizedBox(height: 25),
 
               //not a member? register now
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                // ignore: prefer_const_literals_to_create_immutables
-                children: [
-                  const Text(
-                    'No está registrado?',
-                    style: TextStyle(
-                      color: Colors.black45,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                    ),
-                  ),
-                  const Text(
-                    '  Hazlo Ahora',
-                    style: TextStyle(
-                      color: Colors.black54,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  )
-                ],
+              HaveAccount(
+                haveAccount: '¿No tienes una cuenta?',
+                actionLabel: 'Registrate Aquí',
+                onPressed: () {},
               ),
               const SizedBox(height: 15),
               Material(

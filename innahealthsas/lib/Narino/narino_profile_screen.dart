@@ -212,7 +212,10 @@ class _NarinoProfileScreenState extends State<NarinoProfileScreen> {
                                 RepeatedListTile(
                                   title: 'Log Out',
                                   icon: Icons.logout,
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.pushReplacementNamed(
+                                        context, '/narino_login');
+                                  },
                                 ),
                               ]),
                             ),
