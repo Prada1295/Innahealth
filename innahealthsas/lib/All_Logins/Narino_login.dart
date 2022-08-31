@@ -1,8 +1,10 @@
 // ignore_for_file: sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:innahealthsas/All_SignUps/narino_signup.dart';
 import 'package:innahealthsas/Narino/narino_appbar_general.dart';
-import 'package:innahealthsas/widgets/signup_widgetsa.dart';
+
+import 'package:innahealthsas/widgets/signup_widgets.dart';
 
 class NarinoLogin extends StatefulWidget {
   const NarinoLogin({Key? key}) : super(key: key);
@@ -116,7 +118,12 @@ class _NarinoLoginState extends State<NarinoLogin> {
               HaveAccount(
                 haveAccount: '¿No tienes una cuenta?',
                 actionLabel: 'Registrate Aquí',
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const NarinoSignUp()));
+                },
               ),
               const SizedBox(height: 15),
               Material(

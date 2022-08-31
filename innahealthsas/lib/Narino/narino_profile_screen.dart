@@ -36,7 +36,7 @@ class _NarinoProfileScreenState extends State<NarinoProfileScreen> {
                         duration: const Duration(microseconds: 200),
                         opacity: constraints.biggest.height <= 120 ? 1 : 0,
                         child: const Text(
-                          'Account',
+                          'Perfil',
                           style: TextStyle(color: Colors.black),
                         ),
                       ),
@@ -157,7 +157,7 @@ class _NarinoProfileScreenState extends State<NarinoProfileScreen> {
                             ),
                           ),
                           const ProfileHeaderLabel(
-                              headerLabel: '  Account Info.  '),
+                              headerLabel: '  Información de la Cuenta  '),
                           Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: Container(
@@ -168,26 +168,26 @@ class _NarinoProfileScreenState extends State<NarinoProfileScreen> {
                               child: Column(children: const [
                                 RepeatedListTile(
                                   icon: Icons.email,
-                                  subTitle: 'example@email.com',
-                                  title: 'Email Address',
+                                  subTitle: 'ejemplo_123@email.com',
+                                  title: 'Dirección Email',
                                 ),
                                 BrownDivider(),
                                 RepeatedListTile(
                                   icon: Icons.phone,
                                   subTitle: '+111-1111',
-                                  title: 'Phone No.',
+                                  title: 'Número Celular',
                                 ),
                                 BrownDivider(),
                                 RepeatedListTile(
                                   icon: Icons.location_pin,
-                                  subTitle: 'example:140 - st- New Jersey',
-                                  title: 'Address',
+                                  subTitle: 'ejemplo. Cra 123 # 45 sur 67',
+                                  title: 'Dirección',
                                 ),
                               ]),
                             ),
                           ),
                           const ProfileHeaderLabel(
-                              headerLabel: '  Account Settings.  '),
+                              headerLabel: '  Configuración Cuenta '),
                           Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: Container(
@@ -197,20 +197,20 @@ class _NarinoProfileScreenState extends State<NarinoProfileScreen> {
                                   borderRadius: BorderRadius.circular(16)),
                               child: Column(children: [
                                 RepeatedListTile(
-                                  title: 'Edit Profile',
+                                  title: 'Editar Perfil',
                                   subTitle: '',
                                   icon: Icons.edit,
                                   onPressed: () {},
                                 ),
                                 const BrownDivider(),
                                 RepeatedListTile(
-                                  title: 'Change Password',
+                                  title: 'Cambiar Contraseña',
                                   icon: Icons.lock,
                                   onPressed: () {},
                                 ),
                                 const BrownDivider(),
                                 RepeatedListTile(
-                                  title: 'Log Out',
+                                  title: 'Salir',
                                   icon: Icons.logout,
                                   onPressed: () {
                                     Navigator.pushReplacementNamed(
