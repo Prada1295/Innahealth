@@ -16,7 +16,7 @@ class IndicatorNineCategory extends StatelessWidget {
             left: 0,
             child: SizedBox(
               height: MediaQuery.of(context).size.height * 0.8,
-              width: MediaQuery.of(context).size.width * 0.75,
+              width: MediaQuery.of(context).size.width * 0.8,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -46,12 +46,6 @@ class IndicatorNineCategory extends StatelessWidget {
               ),
             ),
           ),
-          const Positioned(
-              bottom: 0,
-              right: 0,
-              child: SliderBar(
-                maincategoryName: 'Articulación de Actores',
-              ))
         ],
       ),
     );

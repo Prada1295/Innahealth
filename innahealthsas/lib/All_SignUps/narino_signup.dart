@@ -179,8 +179,11 @@ class _NarinoSignUpState extends State<NarinoSignUp> {
                     ),
                     HaveAccount(
                       haveAccount: 'Ya tienes una cuenta? ',
-                      actionLabel: 'Logeate',
-                      onPressed: () {},
+                      actionLabel: 'Loggeate',
+                      onPressed: () {
+                        Navigator.pushReplacementNamed(
+                            context, '/narino_login');
+                      },
                     ),
                     SignUpButton(
                       mainButtonLabel: 'Registrar',

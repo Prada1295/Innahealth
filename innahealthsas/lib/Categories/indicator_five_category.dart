@@ -16,7 +16,7 @@ class IndicatorFiveCategory extends StatelessWidget {
             left: 0,
             child: SizedBox(
               height: MediaQuery.of(context).size.height * 0.8,
-              width: MediaQuery.of(context).size.width * 0.75,
+              width: MediaQuery.of(context).size.width * 0.8,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -31,7 +31,7 @@ class IndicatorFiveCategory extends StatelessWidget {
                       crossAxisCount: 2,
                       children: List.generate(indicatorfive.length, (index) {
                         return SubcategoryModel(
-                          mainCategoryName: 'indicator 5',
+                          mainCategoryName: 'indicador 5',
                           subCategoryName: indicatorfive[index],
                           //remember to change images direction
                           assetName:
@@ -45,12 +45,6 @@ class IndicatorFiveCategory extends StatelessWidget {
               ),
             ),
           ),
-          const Positioned(
-              bottom: 0,
-              right: 0,
-              child: SliderBar(
-                maincategoryName: 'vigilancia epidemiológica',
-              ))
         ],
       ),
     );

@@ -64,7 +64,7 @@ class _NarinoIndicatorScreenState extends State<NarinoIndicatorScreen> {
   Widget sideNavigator(Size size) {
     return SizedBox(
         height: size.height * 0.8,
-        width: size.width * 0.2,
+        width: size.width * 0.20,
         child: ListView.builder(
             itemCount: items.length,
             itemBuilder: (context, index) {
@@ -76,9 +76,9 @@ class _NarinoIndicatorScreenState extends State<NarinoIndicatorScreen> {
                 },
                 child: Container(
                   color: items[index].isSelected == true
-                      ? Colors.brown[100]
-                      : Colors.brown.shade300,
-                  height: 100,
+                      ? Colors.grey[100]
+                      : Colors.grey.shade300,
+                  height: 83,
                   child: Center(
                     child: Text(
                       items[index].label,

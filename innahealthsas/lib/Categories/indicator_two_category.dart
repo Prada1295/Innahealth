@@ -16,7 +16,7 @@ class IndicatorTwoCategory extends StatelessWidget {
             left: 0,
             child: SizedBox(
               height: MediaQuery.of(context).size.height * 0.8,
-              width: MediaQuery.of(context).size.width * 0.75,
+              width: MediaQuery.of(context).size.width * 0.8,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -31,7 +31,7 @@ class IndicatorTwoCategory extends StatelessWidget {
                       crossAxisCount: 2,
                       children: List.generate(indicatortwo.length, (index) {
                         return SubcategoryModel(
-                          mainCategoryName: 'indicator 2',
+                          mainCategoryName: 'indicador 2',
                           subCategoryName: indicatortwo[index],
                           //remember to change images direction
                           //CHANGEEE FAST
@@ -46,12 +46,6 @@ class IndicatorTwoCategory extends StatelessWidget {
               ),
             ),
           ),
-          const Positioned(
-              bottom: 0,
-              right: 0,
-              child: SliderBar(
-                maincategoryName: 'Sis. Información de Salud',
-              ))
         ],
       ),
     );

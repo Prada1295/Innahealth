@@ -16,7 +16,7 @@ class IndicatorEightCategory extends StatelessWidget {
             left: 0,
             child: SizedBox(
               height: MediaQuery.of(context).size.height * 0.8,
-              width: MediaQuery.of(context).size.width * 0.75,
+              width: MediaQuery.of(context).size.width * 0.8,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -31,7 +31,7 @@ class IndicatorEightCategory extends StatelessWidget {
                       crossAxisCount: 2,
                       children: List.generate(indicatoreight.length, (index) {
                         return SubcategoryModel(
-                          mainCategoryName: 'indicator 8',
+                          mainCategoryName: 'indicador 8',
                           subCategoryName: indicatoreight[index],
                           //remember to change images direction
                           //CHANGEEEE IMAGES DIRECTION
@@ -46,12 +46,6 @@ class IndicatorEightCategory extends StatelessWidget {
               ),
             ),
           ),
-          const Positioned(
-              bottom: 0,
-              right: 0,
-              child: SliderBar(
-                maincategoryName: 'ser. salud / talento humano',
-              ))
         ],
       ),
     );

@@ -13,7 +13,7 @@ class _NarinoHomeBarState extends State<NarinoHomeBar> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 8,
+      length: 3,
       child: Scaffold(
           appBar: AppBar(
             elevation: 1,
@@ -22,7 +22,7 @@ class _NarinoHomeBarState extends State<NarinoHomeBar> {
             bottom: const TabBar(
               isScrollable: true,
               indicatorColor: Colors.brown,
-              indicatorWeight: 8,
+              indicatorWeight: 3,
               tabs: [
                 RepeatedTab(
                   label: '¿Quienes Somos?',
@@ -31,22 +31,7 @@ class _NarinoHomeBarState extends State<NarinoHomeBar> {
                   label: 'Nuestros Indicadores',
                 ),
                 RepeatedTab(
-                  label: 'MARK 3',
-                ),
-                RepeatedTab(
-                  label: 'MARK 4',
-                ),
-                RepeatedTab(
-                  label: 'MARK 5',
-                ),
-                RepeatedTab(
-                  label: 'MARK 6',
-                ),
-                RepeatedTab(
-                  label: 'MARK 7',
-                ),
-                RepeatedTab(
-                  label: 'MARK 8',
+                  label: 'Acerca de Nariño(Antioquia)',
                 ),
               ],
             ),
@@ -62,12 +47,9 @@ class _NarinoHomeBarState extends State<NarinoHomeBar> {
               'Pantalla de Presentacion de "Nuestros Indicadores", para dar una vista general de los aspecrtos positivos y negativos en relacion a los idnicadores',
               textAlign: TextAlign.center,
             )),
-            Center(child: Text('MARK 3 screen')),
-            Center(child: Text('MARK 4 screen')),
-            Center(child: Text('MARK 5 screen')),
-            Center(child: Text('MARK 6 screen')),
-            Center(child: Text('MARK 7 screen')),
-            Center(child: Text('MARK 8 screen')),
+            Center(
+                child: Text(
+                    'Temas de interes realcionados con la alcaldia de Nariño')),
           ])),
     );
   }
